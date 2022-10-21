@@ -1,11 +1,14 @@
 \documentclass{ResumeFormat} % Use the custom resume.cls style
 
+\input{glyphtounicode}
+\pdfgentounicode=1
+
 \usepackage[left=0.5 in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{William Nguyen} % Your name
 % You can merge both of these into a single line, if you do not have a website.
-\address{+1(714)406-8131}
+\address{(714) 406-8131}
 \address{\href{mailto:williamngoc93@hotmail.com}{williamngoc93@hotmail.com} \\ \href{https://linkedin.com/in/william-nguyen-934552194}{linkedin.com/in/william-nguyen-934552194} \\ \href{https://captnw.github.io/}{captnw.github.io}}  %
 
 \begin{document}
@@ -14,10 +17,10 @@
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\color{orange}
 \begin{rSection}{Education}
-{\bf BS in Computer Science}, University of California, Irvine \hfill {\emph{Graduated June 2022}}\\
-{\bf BS in Computer Game Science}, University of California, Irvine \hfill \\
+{\bf University of California, Irvine \hfill} {\emph{Sept 2018 - June 2022}}\\
+Bachelor of science in Computer Science \hfill \\
+Bachelor of science in Computer Game Science \hfill \\
 GPA: 3.84
 % Some other education accredition example... \\
 
@@ -26,10 +29,10 @@ GPA: 3.84
 %----------------------------------------------------------------------------------------
 % TECHINICAL STRENGTHS	
 %----------------------------------------------------------------------------------------
-\begin{rSection}{SKILLS}
+\begin{rSection}{TECHNICAL SKILLS}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & Javascript, Python, HTML, CSS, Java, C\#, C, C++, SQL \\
-Frameworks & React, React native, Node.js, Spring boot\\
+Languages & HTML, CSS, JavaScript, Typescript, Python, Java, C\#, C, C++, SQL \\
+Frameworks & Node.js, React.js, React native, Jasmine.js, Spring boot\\
 Tools & Git, Visual Studio Code, Visual Studio, Unity \\ %\\
 Systems & Windows (10,7), Linux (Ubuntu)
 %Soft Skills & Time Management, Teamwork, Communication, Problem Solving \\
@@ -45,7 +48,7 @@ Systems & Windows (10,7), Linux (Ubuntu)
 %    \item Utilized XYZ that increased A by B\%.
 
 \begin{rSection}{PROJECTS}
-\vspace{-1em}
+\vspace{-2em} % Strange spacing we're adjusting, I'm not sure what rule is causing this spacing
 
 \item \textbf{Fabflix} {} \hfill {\emph{May 2022}} % \href{www.github.com/GITHUBURL}{Text here}
 
@@ -53,7 +56,7 @@ Systems & Windows (10,7), Linux (Ubuntu)
 % back-end (user id management, movie data querying / retrieval, load balancer)
 Mock movie storefront where users can search and purchase digital copies of movies.
 
-Libraries/tools used: Java, SQL, Javascript, ReactJS, React native, Stripe, Spring boot
+Libraries/tools used: Java, SQL, JavaScript, ReactJS, React native, Stripe, Spring boot
 \begin{itemize}
     \itemsep -3pt {}
      \item Set up and developed the Fabflix back end via the process of Test Driven Development.
@@ -61,22 +64,22 @@ Libraries/tools used: Java, SQL, Javascript, ReactJS, React native, Stripe, Spri
      \item Utilized the Stripe credit card vendor API to imitate payment functionality.
  \end{itemize}
 
- \item \textbf{Object recognition project} {} \hfill {\emph{March 2022}}
+\item \textbf{Object recognition project} {} \hfill {\emph{March 2022}}
 
 Object detection software that can be trained with images to detect and match objects in other images.
 
-Library/tools used: Python, Numpy, Matplotlib, SciPy, Juptyer Notebook
+Library/tools used: Python, NumPy, Matplotlib, SciPy, Juptyer Notebook
 \begin{itemize}
     \itemsep -3pt {} 
-     \item Implemented object recognition with image processing, primarily using HOG (histogram of oriented gradients).
+     \item Implemented object recognition with image processing, using HOG (histogram of oriented gradients).
      \item Create a template for the software to match by passing in positive and negative training images.
  \end{itemize}
 
- \item \textbf{Checkers AI} {} \hfill {\emph{December 2020}}
+\item \textbf{Checkers AI} {} \hfill {\emph{December 2020}}
 
 This AI simulates and backtracks via the use of search trees to play checkers.
 
-Libraries/tools used: C++, Cmake
+Libraries/tools used: C++, CMake
 \begin{itemize}
     \itemsep -3pt {}
      \item Utilized Monte Carlo tree search, and backtracking to empower the checkers AI to make good moves.

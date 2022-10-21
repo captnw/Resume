@@ -47,7 +47,7 @@
 \def \name#1{\def\@name{#1}} % Defines the \name command to set name
 \def \@name {} % Sets \@name to empty by default
 
-\def \addressSep {$\diamond$} % Set default address separator to a diamond
+\def \addressSep {$\bullet$} % Set default address separator to a diamond
 
 % One, two or three address lines can be specified 
 \let \@addressone \relax
@@ -106,10 +106,9 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  \sectionskip
-  \MakeUppercase{#1} % Section title
-  \sectionlineskip
-  \hrule % Horizontal line
+  \color{orange}
+  \MakeUppercase{\Large #1} % Section title
+  \normalsize
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em}\color{black} % Margin within the section
   }
