@@ -4,9 +4,9 @@ To compile the .tex file into a .pdf, you would either use an online LaTeX IDE, 
 
 Previously, I've did so on my local machine, so I had these tools installed:
 - VSCode
-- TeXLive
-- TeXLive manager
+- MiKTeX
+- Perl (I've installed Strawberry Perl for Windows)
 - LaTeX Workshop extension for VSCode.
 
-Then simply open the .tex file with VSCode, navigate over to the extension, and build the project (with latexmk).
-If this doesn't work, make sure you open TeXLive manager to see if you have the appropriate package installed.
+Then simply open the .tex file with VSCode, navigate over to the extension, and build the project. If you're missing MiKTeX library
+it should either prompt you or install them automatically.
